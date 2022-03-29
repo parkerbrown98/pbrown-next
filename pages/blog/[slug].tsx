@@ -52,7 +52,7 @@ export default function BlogPostPage({ content, matter, readTime }: StaticProps)
             <LayoutSection>
                 { matter.cover && (
                     <div className="overflow-hidden shadow-md rounded-md max-w-5xl mb-8">
-                        <Image src={matter.cover} layout="responsive" width={16} height={9} priority />
+                        <Image src={matter.cover} layout="responsive" width={16} height={9} sizes="50vw" priority />
                     </div>
                 )}
                 <div className="flex gap-x-4 items-center">

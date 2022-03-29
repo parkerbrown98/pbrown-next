@@ -14,7 +14,7 @@ export default function BlogCard({ post }: Props) {
                 <Link href={`/blog/${post.matter.slug}`} passHref>
                     <a>
                         <div className={`${post.matter.cover ? 'overflow-hidden shadow-md' : 'bg-slate-200'} relative pb-[56.25%] rounded-md`}>
-                            { post.matter.cover && <Image src={post.matter.cover} layout="fill" objectFit="cover" /> }
+                            { post.matter.cover && <Image src={post.matter.cover} layout="fill" objectFit="cover" sizes="25vw" /> }
                         </div>
                     </a>
                 </Link>

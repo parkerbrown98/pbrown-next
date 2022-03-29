@@ -1,0 +1,15 @@
+.card {
+    @apply border border-slate-300 shadow-md rounded-lg bg-cover bg-center bg-fixed relative min-h-[40rem];
+}
+
+.card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(4px); */
+    z-index: 0;
+}

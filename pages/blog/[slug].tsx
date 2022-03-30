@@ -64,7 +64,7 @@ export default function BlogPostPage({ content, matter, readTime }: StaticProps)
                         <LinkIcon className="w-8 h-8 mt-4" />
                     </span>
                 </div>
-                <div className="text-xl text-slate-400 mt-2">{ matter.date } &bull; { readTime } minute read</div>
+                <div className="text-xl text-slate-500 mt-2">{ matter.date } &bull; { readTime } minute read</div>
                 <div className={styles.markdown}>
                     { renderedContent as ReactNode }
                 </div>

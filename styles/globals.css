@@ -10,3 +10,18 @@
     margin-left: -50vw;
     margin-right: -50vw;
 }
+
+.text-fade {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-fade::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient( to top, #fff, transparent 30% );
+}

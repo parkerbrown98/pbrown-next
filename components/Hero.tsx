@@ -9,7 +9,7 @@ export default function Hero() {
                 <h2 className="text-slate-700 text-6xl font-bold">Greetings, Earthling!</h2>
                 <p className="text-xl text-slate-500">This is my place to unwind, document, and share. Below are some of my most recent blog posts, guides, and job experiences.</p>
                 <div className="flex gap-x-4">
-                    <LinkButton href="#">See all posts</LinkButton>
+                    <LinkButton href="/blog">See all posts</LinkButton>
                     <LinkButton href="#" theme="light">View resume</LinkButton>
                 </div>
             </div>

@@ -57,7 +57,7 @@ export default function Home({ games, posts }: InferGetServerSidePropsType<typeo
           <BlogCard post={posts[1]} />
           <BlogCard post={posts[2]} />
         </div>
-        <LinkButton href="#" className="mt-6">More posts</LinkButton>
+        <LinkButton href="/blog" className="mt-6">More posts</LinkButton>
       </LayoutSection>
       <LayoutSection>
         <LayoutHeader>Featured Guides</LayoutHeader>

@@ -18,7 +18,7 @@ export default function BlogCard({ post }: Props) {
                         </div>
                     </a>
                 </Link>
-                <div className="flex flex-col gap-y-2 mt-6">
+                <div className="flex flex-col gap-y-1 mt-6">
                     <Link href={`/blog/${post.matter.slug}`} passHref>
                         <a className="text-2xl text-slate-700 font-bold break-words hover:underline">
                             { post.matter.title }

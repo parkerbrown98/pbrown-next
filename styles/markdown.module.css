@@ -10,7 +10,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-    @apply text-lg text-slate-600;
+    @apply text-lg text-slate-500;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }

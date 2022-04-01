@@ -29,3 +29,10 @@ export interface BlogFrontMatter {
     slug: string;
     cover?: string;
 }
+
+export interface ITimeline {
+    title: string;
+    location: string;
+    daterange: string;
+    body: string;
+}

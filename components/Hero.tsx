@@ -10,7 +10,7 @@ export default function Hero() {
                 <p className="text-xl text-slate-500">This is my place to unwind, document, and share. Below are some of my most recent blog posts, guides, and job experiences.</p>
                 <div className="flex gap-x-4">
                     <LinkButton href="/blog">See all posts</LinkButton>
-                    <LinkButton href="#" theme="light">View resume</LinkButton>
+                    <LinkButton href="/about" theme="light">View resume</LinkButton>
                 </div>
             </div>
             {/* <div className="relative overflow-hidden w-full object-cover">

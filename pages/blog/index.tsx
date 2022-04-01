@@ -1,10 +1,13 @@
 import moment from "moment"
 import { GetStaticPropsContext } from "next"
 import { ParsedUrlQuery } from "querystring"
-import BlogRow from "../../components/BlogRow"
+import { MouseEventHandler, useState } from "react"
+import BlogRow from "../../components/blog/BlogRow"
 import Header from "../../components/Header"
 import LayoutHeader from "../../components/LayoutHeader"
 import LayoutSection from "../../components/LayoutSection"
+import LoadMore from "../../components/LoadMore"
+import PageHeader from "../../components/PageHeader"
 import { getAllPosts } from "../../lib/markdown"
 import { BlogPost } from "../../types"
 
@@ -32,16 +35,23 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
 }
 
 export default function BlogPage({ posts }: Props) {
+    const [items, setItems] = useState<number>(5);
+
+    const loadMoreItems: MouseEventHandler<HTMLDivElement> = (e) => {
+        setItems(Math.min(posts.length, items + 5));
+    }
+
     return (
         <>
             <Header size="sm" />
             <LayoutSection>
-                <h1 className="text-5xl text-slate-700 font-bold">Blog</h1>
+                <PageHeader>Blog</PageHeader>
             </LayoutSection>
             <LayoutSection>
                 <div className="grid gap-12">
-                    { posts.map(post => <BlogRow key={post.matter.slug} content={post.content} matter={post.matter} readTime={post.readTime} />) }
+                    { posts.slice(0, items).map(post => <BlogRow key={post.matter.slug} content={post.content} matter={post.matter} readTime={post.readTime} />) }
                 </div>
+                <LoadMore onClick={loadMoreItems}/>
             </LayoutSection>
         </>
     )

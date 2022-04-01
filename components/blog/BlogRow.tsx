@@ -1,9 +1,9 @@
 import moment from "moment"
 import Image from "next/image"
 import { ReactNode } from "react"
-import { useProcessor } from "../hooks/useProcessor"
-import { BlogFrontMatter } from "../types"
-import LinkButton from "./LinkButton"
+import { useProcessor } from "../../hooks/useProcessor"
+import { BlogFrontMatter } from "../../types"
+import LinkButton from "../LinkButton"
 
 type Props = {
     content: string,

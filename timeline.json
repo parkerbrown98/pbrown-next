@@ -1,0 +1,24 @@
+{
+    "experience": [
+        {
+            "title": "WorkSuites",
+            "location": "Dallas, TX",
+            "daterange": "January 2022 - Present",
+            "body": "Responsible for yadadadadadadadadadadad yadadadada yadadada"
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor of Science - Computer Science",
+            "location": "University of North Texas",
+            "daterange": "August 2019 - August 2021",
+            "body": "asdadad"
+        },
+        {
+            "title": "Associate of Science - Computer Science",
+            "location": "Tyler Junior College",
+            "daterange": "August 2017 - Spring 2019",
+            "body": "asdadasdasdasdas"
+        }
+    ]
+}

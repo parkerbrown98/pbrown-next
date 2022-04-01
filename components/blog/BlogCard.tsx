@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { BlogPost } from "../types"
+import { BlogPost } from "../../types"
 import styles from './BlogCard.module.css'
 
 type Props = {

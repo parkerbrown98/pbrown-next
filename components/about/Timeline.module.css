@@ -1,0 +1,21 @@
+.entry::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    @apply border-[3px] border-orange-500/75 bg-white;
+    z-index: 1;
+}
+
+.entry:not(:last-of-type)::after {
+    content: "";
+    width: 3px;
+    height: calc(100% + 1rem);
+    position: absolute;
+    top: 1rem;
+    left: calc((1rem / 2) - (3px / 2));
+    @apply bg-orange-500/75;
+}

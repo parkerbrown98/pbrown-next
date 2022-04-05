@@ -11,6 +11,8 @@ import GameCard from '../components/GameCard'
 import LinkButton from '../components/LinkButton'
 import { getAllPosts } from '../lib/markdown'
 import moment from 'moment'
+import Footer from '../components/Footer'
+import DefaultLayout from '../layouts/default'
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   let games: SteamGame[] = [];
@@ -45,8 +47,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
 export default function Home({ games, posts }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <>
-      <Header size="sm"/>
+    <DefaultLayout>
       <LayoutSection>
         <Hero />
       </LayoutSection>
@@ -76,6 +77,6 @@ export default function Home({ games, posts }: InferGetServerSidePropsType<typeo
           </div>
         </LayoutSection>
       )}
-    </>
+    </DefaultLayout>
   )
 }

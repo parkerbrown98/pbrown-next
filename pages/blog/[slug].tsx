@@ -10,6 +10,7 @@ import { useProcessor } from "../../hooks/useProcessor";
 import { ReactNode } from "react";
 import moment from "moment";
 import Image from "next/image";
+import DefaultLayout from "../../layouts/default";
 
 type StaticProps = {
     content: string,
@@ -47,8 +48,7 @@ export default function BlogPostPage({ content, matter, readTime }: StaticProps)
     const renderedContent = useProcessor(content);
 
     return (
-        <>
-            <Header size="sm" />
+        <DefaultLayout>
             <LayoutSection>
                 { matter.cover && (
                     <div className="overflow-hidden shadow-md rounded-md max-w-xl mb-8">
@@ -69,6 +69,6 @@ export default function BlogPostPage({ content, matter, readTime }: StaticProps)
                     { renderedContent as ReactNode }
                 </div>
             </LayoutSection>
-        </>
+        </DefaultLayout>
     )
 }

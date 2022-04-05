@@ -8,6 +8,7 @@ import LayoutHeader from "../../components/LayoutHeader"
 import LayoutSection from "../../components/LayoutSection"
 import LoadMore from "../../components/LoadMore"
 import PageHeader from "../../components/PageHeader"
+import DefaultLayout from "../../layouts/default"
 import { getAllPosts } from "../../lib/markdown"
 import { BlogPost } from "../../types"
 
@@ -42,8 +43,7 @@ export default function BlogPage({ posts }: Props) {
     }
 
     return (
-        <>
-            <Header size="sm" />
+        <DefaultLayout>
             <LayoutSection>
                 <PageHeader>Blog</PageHeader>
             </LayoutSection>
@@ -53,6 +53,6 @@ export default function BlogPage({ posts }: Props) {
                 </div>
                 <LoadMore onClick={loadMoreItems}/>
             </LayoutSection>
-        </>
+        </DefaultLayout>
     )
 }

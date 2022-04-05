@@ -2,12 +2,12 @@ import Timeline from "../components/about/Timeline"
 import Header from "../components/Header"
 import LayoutSection from "../components/LayoutSection"
 import PageHeader from "../components/PageHeader"
+import DefaultLayout from "../layouts/default"
 import timeline from "../timeline.json"
 
 export default function AboutPage() {
     return (
-        <>
-            <Header size="sm" />
+        <DefaultLayout>
             <LayoutSection>
                 <PageHeader>About Me</PageHeader>
             </LayoutSection>
@@ -23,6 +23,6 @@ export default function AboutPage() {
                     </div>
                 </div>
             </LayoutSection>
-        </>
+        </DefaultLayout>
     )
 }

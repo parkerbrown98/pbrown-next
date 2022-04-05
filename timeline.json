@@ -2,9 +2,21 @@
     "experience": [
         {
             "title": "WorkSuites",
-            "location": "Dallas, TX",
+            "location": "Software Developer",
             "daterange": "January 2022 - Present",
             "body": "Responsible for yadadadadadadadadadadad yadadadada yadadada"
+        },
+        {
+            "title": "Mark III Systems",
+            "location": "Intern",
+            "daterange": "August 2021 - November 2021",
+            "body": "asdas"
+        },
+        {
+            "title": "JBA Designs",
+            "location": "Drafting Technician",
+            "daterange": "May 2020 - December 2021",
+            "body": "Responsible for drafting and designing floor plans, foundation plans, roof plans, elevations, and electrical plans for custom homes. Designed and maintained customer-facing website, as well as managed on-site NAS solution."
         }
     ],
     "education": [
@@ -12,13 +24,13 @@
             "title": "Bachelor of Science - Computer Science",
             "location": "University of North Texas",
             "daterange": "August 2019 - August 2021",
-            "body": "asdadad"
+            "body": "Studies included advanced topics regarding computer science such as graph theory, automata, architecture, data structures & algorithms, linear algebra, graphics, database design & administration, and web development. Attended as an honor student. Delivered a thesis regarding graphical tools and methods for teaching young students how to program."
         },
         {
             "title": "Associate of Science - Computer Science",
             "location": "Tyler Junior College",
             "daterange": "August 2017 - Spring 2019",
-            "body": "asdadasdasdasdas"
+            "body": "Studies included fundamentals of computer science, computer architecture, physics, and mathematics. Attended as an honor student and a member of Phi Theta Kappa."
         }
     ]
 }

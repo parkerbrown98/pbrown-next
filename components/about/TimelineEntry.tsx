@@ -13,7 +13,7 @@ export default function TimelineEntry({ timeline }: Props) {
                 <div className="text-lg text-slate-500 font-semibold leading-tight">{ timeline.location }</div>
                 <div className="text-lg text-slate-400 font-semibold leading-tight">{ timeline.daterange }</div>
             </div>
-            <div>{ timeline.body }</div>
+            <div className="w-10/12">{ timeline.body }</div>
         </li>
     )
 }

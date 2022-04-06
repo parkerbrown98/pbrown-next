@@ -36,3 +36,10 @@ export interface ITimeline {
     daterange: string;
     body: string;
 }
+
+export interface Project {
+    title: string;
+    type: string;
+    category: string;
+    image: string;
+}

@@ -28,7 +28,7 @@ export default function AboutPage() {
             </LayoutSection>
             <LayoutSection>
                 <h2 className="text-5xl text-slate-500 font-bold">Projects</h2>
-                <div className="grid grid-cols-4 gap-8 mt-12">
+                <div className="grid grid-cols-4 gap-8 mt-8">
                     <ProjectCard project={projects[0]} />
                     <ProjectCard project={projects[1]} />
                     <ProjectCard project={projects[0]} />

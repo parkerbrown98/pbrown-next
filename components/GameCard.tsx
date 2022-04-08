@@ -1,3 +1,4 @@
+import { formatNumber } from "../lib/utils"
 import { SteamGame } from "../types"
 
 type Props = {
@@ -14,7 +15,7 @@ export default function GameCard({ game }: Props) {
                         { game.name }
                     </div>
                     <div className="text-xs text-slate-500">
-                        { Math.round(game.playtime_forever / 60) } hours
+                        { formatNumber(Math.round(game.playtime_forever / 60)) } hours
                     </div>
                 </div>
             </div>

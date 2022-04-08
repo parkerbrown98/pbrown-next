@@ -7,12 +7,34 @@ import ProjectCard from "../components/projects/ProjectCard"
 import DefaultLayout from "../layouts/default"
 import timeline from "../_json/timeline.json"
 import projects from "../_json/projects.json"
+import Metric from "../components/about/Metric"
+import { getOwnedGames } from "../lib/steam"
+import { GetStaticProps, InferGetStaticPropsType } from "next"
 
-export default function AboutPage() {
+export async function getStaticProps() {
+    const { count: gameCount, games } = await getOwnedGames();
+
+    return {
+        props: {
+            games: gameCount
+        },
+        revalidate: 120
+    }
+}
+
+export default function AboutPage({ games }: InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <DefaultLayout>
             <LayoutSection>
                 <PageHeader>About Me</PageHeader>
+            </LayoutSection>
+            <LayoutSection>
+                <div className="grid grid-cols-4 gap-8">
+                    <Metric name="Games" desc="Now that's a lot of games..." count={games} />
+                    <Metric name="Page Views" desc="Since 2022" count={1234} />
+                    <Metric name="GitHub Stars" desc="Look&apos;d up in perfect silence at the stars" count={1234} />
+                    <Metric name="YouTube Views" desc="Go watch my videos" count={1234} />
+                </div>
             </LayoutSection>
             <LayoutSection>
                 <div className="grid grid-cols-2 gap-x-8">

@@ -18,7 +18,7 @@ export const getOwnedGames = () => {
                 games.push(newGame);
             });
 
-            resolve({ count: data.response.game_count, games });
+            resolve({ count: games.length, games });
         } catch (err) {
             reject(new Error("Failed to contact Steam API!"));
         }
